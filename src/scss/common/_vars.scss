@@ -1,4 +1,23 @@
-$_main_color: #242424;
-$_main_bg_color: rgba(255, 255, 255, 0.87);
-$_header_color: #747bff;
-$_header_accent_color: red;
+:root {
+  // Colors
+  --link-blue: #003ec4;
+  --yellow: #ffa02c;
+  --card-background: rgba(40, 52, 93, 0.85);
+  --background: #262a57;
+  --white: #eaeaea;
+  --header-footer: #10152e;
+  --color: #ffa02c;
+  --strip-color: rgba(24, 30, 64, 0.45);
+
+  // Typography
+  --font-family: 'Alexandria', sans-serif;
+  --second-family: 'Braah One', sans-serif;
+  --third-family: 'Anta', sans-serif;
+  --font3: 'Cabin', sans-serif;
+  --font4: 'Roboto', sans-serif;
+
+  // Layout
+  --container-padding: 48px;
+  --container-width-desktop: 1160px;
+  --max-width-wide-screen: 1440px;
+}

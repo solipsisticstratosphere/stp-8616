@@ -1,30 +1,233 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  padding-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.logo img {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 320px) {
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    content: url('../img/logo-s.png');
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo::after {
+    content: 'Storm PuzzleRush Game';
+    display: block;
+    font-family: var(--second-family);
+    font-family: 'Braah One', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--yellow);
+    margin-left: 8px;
+  }
+}
+
+.nav-categories {
+  display: flex;
+  align-items: center;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
+  gap: 38px;
+}
 
-  @include media(tablet) {
-    justify-content: flex-start;
+@media (max-width: 1024px) {
+  .nav-list {
+    gap: 20px;
   }
+}
 
-  @include media(desktop) {
-    justify-content: flex-end;
+@media (max-width: 320px) {
+  .nav-list {
+    display: none;
   }
 }
 
 .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
+  font-family: 'Anta', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25em;
+  color: var(--white);
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: $_header_accent_color;
+  color: var(--yellow);
+}
+
+.mobile-menu-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .mobile-menu-btn {
+    display: flex;
+  }
+}
+
+.mobile-menu-btn::before,
+.mobile-menu-btn::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--white);
+  transition: transform 0.3s ease;
+}
+
+.mobile-menu-btn::before {
+  transform: translateY(-6px);
+}
+
+.mobile-menu-btn::after {
+  transform: translateY(6px);
+}
+
+.mobile-menu-btn[aria-expanded='true']::before {
+  transform: rotate(45deg);
+}
+
+.mobile-menu-btn[aria-expanded='true']::after {
+  transform: rotate(-45deg);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 52, 93, 1);
+  z-index: 999999;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  overflow-y: auto;
+  display: none;
+  border-radius: 10px;
+}
+
+@media (max-width: 320px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  width: 100%;
+  max-width: 192px;
+  margin-left: auto;
+}
+
+.mobile-menu-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+  background-color: #f5f5f5;
+}
+
+.mobile-menu-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.mobile-menu-item {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mobile-menu-link {
+  display: block;
+  font-family: 'Anta', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.25em;
+  color: #eaeaea;
+  padding: 12px 16px;
+  transition: color 0.3s ease;
+
+  text-align: left;
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: var(--yellow);
 }
