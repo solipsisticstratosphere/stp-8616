@@ -5,6 +5,17 @@ import FullReload from 'vite-plugin-full-reload';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { globalStylesOptions } from './global.styles';
 
+const githubPagesPathFix = () => {
+  return {
+    name: 'github-pages-path-fix',
+    transformIndexHtml(html) {
+      return html
+        .replace(/(href|src)=["']\/stp-8616\//g, '$1="./') // Fix CSS and JS
+        .replace(/src=["']\/stp-8616\/assets\//g, 'src="./assets/'); // Fix image paths
+    },
+  };
+};
+
 export default defineConfig(({ command }) => {
   return {
     base: '/stp-8616/',
@@ -14,7 +25,8 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-
+      assetsDir: 'assets',
+      emptyOutDir: true,
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
@@ -31,6 +43,7 @@ export default defineConfig(({ command }) => {
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
+      githubPagesPathFix(),
       ViteImageOptimizer({
         exclude: /^sprite.svg$/,
         png: {
