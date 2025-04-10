@@ -1,0 +1,201 @@
+.game-promo {
+  margin-top: 53px;
+  margin-bottom: 72px;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.game-promo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.game-promo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.game-promo-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  color: var(--yellow);
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.2;
+  max-width: 50%;
+}
+
+.game-promo-image {
+  width: 143px;
+  height: 143px;
+  flex-shrink: 0;
+}
+
+.game-promo-img {
+  width: 143px;
+  height: 143px;
+  max-width: 143px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.game-promo-desktop-title {
+  display: none;
+}
+
+.game-promo-desktop-image {
+  display: none;
+}
+
+.game-promo-description {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--white);
+  font-size: 13px;
+  line-height: 1.6;
+  width: 100%;
+  margin: 0;
+}
+
+.game-promo-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.game-promo-text {
+  width: 100%;
+}
+
+.game-promo-button {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  max-width: 160px;
+  background-color: transparent;
+  border: 2px solid transparent;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 12px;
+  margin-top: 16px;
+}
+
+.game-promo-button:hover,
+.game-promo-button:focus {
+  box-shadow: 0 0 6px 0 #fff;
+  transform: scale(1.02);
+}
+
+.game-promo-button:active {
+  border: 2px solid #ffa02c;
+  transform: scale(0.98);
+}
+
+.game-promo-button-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (min-width: 321px) {
+  .game-promo-wrapper {
+    gap: 24px;
+  }
+
+  .game-promo-title {
+    font-size: clamp(24px, 3vw + 15px, 36px);
+    line-height: 1.25;
+  }
+
+  .game-promo-description {
+    font-size: clamp(13px, 1vw + 10px, 16px);
+    line-height: 1.6;
+  }
+
+  .game-promo-button {
+    max-width: clamp(160px, 15vw + 100px, 200px);
+  }
+
+  .game-promo-image {
+    width: auto;
+    height: auto;
+    max-width: clamp(143px, 20vw + 80px, 250px);
+  }
+
+  .game-promo-img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .game-promo-title {
+    font-size: clamp(36px, 4vw + 20px, 48px);
+  }
+
+  .game-promo-description {
+    font-size: clamp(16px, 1vw + 12px, 18px);
+  }
+}
+
+@media (min-width: 768px) {
+  .game-promo-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .game-promo-header {
+    display: none;
+  }
+
+  .game-promo-content {
+    flex-direction: column;
+    gap: 24px;
+    max-width: 540px;
+    display: flex;
+  }
+
+  .game-promo-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .game-promo-desktop-title {
+    display: block;
+    font-family: var(--second-family);
+    font-weight: 400;
+    color: var(--yellow);
+    margin: 0;
+    font-size: clamp(48px, 4vw + 24px, 56px);
+    line-height: 1.3;
+  }
+
+  .game-promo-description {
+    font-size: clamp(16px, 1vw + 14px, 18px);
+    line-height: 1.8;
+  }
+
+  .game-promo-desktop-image {
+    display: block;
+    width: auto;
+    max-width: clamp(350px, 30vw + 100px, 480px);
+  }
+
+  .game-promo-desktop-img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+  }
+
+  .game-promo-button {
+    max-width: 258px;
+    margin-top: 48px;
+  }
+}
