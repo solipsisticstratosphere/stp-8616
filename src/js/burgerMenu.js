@@ -10,19 +10,25 @@
 
   if (closeBtn && closeIcon) {
     closeBtn.addEventListener('mouseenter', () => {
-      closeIcon.setAttribute('href', './img/sprite.svg#close-icon-active');
+      closeIcon.setAttribute(
+        'href',
+        '/stp-8616/img/sprite.svg#close-icon-active'
+      );
     });
 
     closeBtn.addEventListener('mouseleave', () => {
-      closeIcon.setAttribute('href', './img/sprite.svg#close-icon');
+      closeIcon.setAttribute('href', '/stp-8616/img/sprite.svg#close-icon');
     });
 
     closeBtn.addEventListener('focus', () => {
-      closeIcon.setAttribute('href', './img/sprite.svg#close-icon-active');
+      closeIcon.setAttribute(
+        'href',
+        '/stp-8616/img/sprite.svg#close-icon-active'
+      );
     });
 
     closeBtn.addEventListener('blur', () => {
-      closeIcon.setAttribute('href', './img/sprite.svg#close-icon');
+      closeIcon.setAttribute('href', '/stp-8616/img/sprite.svg#close-icon');
     });
   }
 
@@ -34,9 +40,12 @@
     mobileMenu.setAttribute('aria-hidden', isMenuOpen);
 
     if (isMenuOpen) {
-      burgerIcon.setAttribute('href', './img/sprite.svg#burger-menu');
+      burgerIcon.setAttribute('href', '/stp-8616/img/sprite.svg#burger-menu');
     } else {
-      burgerIcon.setAttribute('href', './img/sprite.svg#burger-menu-active');
+      burgerIcon.setAttribute(
+        'href',
+        '/stp-8616/img/sprite.svg#burger-menu-active'
+      );
     }
 
     body.style.overflow = isMenuOpen ? '' : 'hidden';
@@ -55,7 +64,7 @@
       menuBtn.setAttribute('aria-expanded', false);
       mobileMenu.classList.remove('is-open');
       mobileMenu.setAttribute('aria-hidden', true);
-      burgerIcon.setAttribute('href', './img/sprite.svg#burger-menu');
+      burgerIcon.setAttribute('href', '/stp-8616/img/sprite.svg#burger-menu');
       body.style.overflow = '';
     });
   });
@@ -65,7 +74,7 @@
       menuBtn.setAttribute('aria-expanded', false);
       mobileMenu.classList.remove('is-open');
       mobileMenu.setAttribute('aria-hidden', true);
-      burgerIcon.setAttribute('href', './img/sprite.svg#burger-menu');
+      burgerIcon.setAttribute('href', '/stp-8616/img/sprite.svg#burger-menu');
       body.style.overflow = '';
     }
   });
