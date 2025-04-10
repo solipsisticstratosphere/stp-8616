@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Character Spotlight - Fading Storm Puzzle</title>
     
-    <script type="module" crossorigin src="./assets/main-96a74cf3.js"></script>
-    <link rel="stylesheet" href="./assets/main-c9554a66.css">
+    <script type="module" crossorigin src="./assets/main-51f2b506.js"></script>
+    <link rel="stylesheet" href="./assets/main-e7180ec8.css">
   </head>
   <body>
     <div class="background-stripes"></div>
@@ -52,6 +52,9 @@
         aria-controls="mobile-menu"
         data-menu-button
       >
+        <svg class="burger-icon" width="27" height="27">
+          <use href="/stp-8616/assets/sprite-60c63b70.svg#burger-menu"></use>
+        </svg>
         <span class="visually-hidden">Open menu</span>
       </button>
     </nav>
@@ -61,43 +64,6 @@
 <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
   <div class="container">
     <div class="mobile-menu-content">
-      <button
-        type="button"
-        class="mobile-menu-close"
-        aria-label="Close menu"
-        data-menu-close
-      >
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2Z"
-            stroke="#10152E"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M15 15.5L9 9.5"
-            stroke="#10152E"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M15 9.5L9 15.5"
-            stroke="#10152E"
-            stroke-width="1.5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </button>
-
       <ul class="mobile-menu-list">
         <li class="mobile-menu-item">
           <a href="./index.html" class="mobile-menu-link">Home</a>
@@ -123,6 +89,16 @@
           <a href="#" class="mobile-menu-link">Quests</a>
         </li>
       </ul>
+      <button
+        type="button"
+        class="mobile-menu-close"
+        aria-label="Close menu"
+        data-menu-close
+      >
+        <svg class="close-icon" width="24" height="24">
+          <use href="../img/sprite.svg#close-icon"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </div>
