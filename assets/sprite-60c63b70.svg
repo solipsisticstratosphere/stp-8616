@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <defs>
+    <filter id="orange-filter">
+      <feColorMatrix type="matrix" values="
+        1 0 0 0 1
+        0 0.627 0 0 0.172
+        0 0 0 0 0
+        0 0 0 1 0
+      "/>
+    </filter>
+  </defs>
+  
+  <symbol id="burger-menu" viewBox="0 0 27 27">
+    <path stroke="#EAEAEA" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M24.75 12.262v-7.65c0-1.687-.72-2.362-2.509-2.362h-4.545c-1.789 0-2.509.675-2.509 2.362v7.65c0 1.688.72 2.363 2.51 2.363h4.544c1.789 0 2.509-.675 2.509-2.363Z"/>
+    <path stroke="#FFA02C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M24.75 22.387v-2.024c0-1.688-.72-2.363-2.509-2.363h-4.545c-1.789 0-2.509.675-2.509 2.363v2.024c0 1.688.72 2.363 2.51 2.363h4.544c1.789 0 2.509-.675 2.509-2.363Z"/>
+    <path stroke="#EAEAEA" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.813 14.738v7.65c0 1.687-.72 2.362-2.51 2.362H4.76c-1.789 0-2.509-.675-2.509-2.363v-7.65c0-1.687.72-2.362 2.509-2.362h4.545c1.788 0 2.508.675 2.508 2.363ZM11.813 4.612v2.026c0 1.687-.72 2.362-2.51 2.362H4.76C2.97 9 2.25 8.325 2.25 6.638V4.612c0-1.687.72-2.362 2.509-2.362h4.545c1.788 0 2.508.675 2.508 2.362Z"/>
+  </symbol>
+  
+  <symbol id="burger-menu-active" viewBox="0 0 27 27">
+    <path stroke="#FFA02C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M24.75 12.262v-7.65c0-1.687-.72-2.362-2.509-2.362h-4.545c-1.789 0-2.509.675-2.509 2.362v7.65c0 1.688.72 2.363 2.51 2.363h4.544c1.789 0 2.509-.675 2.509-2.363Z"/>
+    <path stroke="#FFA02C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M24.75 22.387v-2.024c0-1.688-.72-2.363-2.509-2.363h-4.545c-1.789 0-2.509.675-2.509 2.363v2.024c0 1.688.72 2.363 2.51 2.363h4.544c1.789 0 2.509-.675 2.509-2.363Z"/>
+    <path stroke="#FFA02C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11.813 14.738v7.65c0 1.687-.72 2.362-2.51 2.362H4.76c-1.789 0-2.509-.675-2.509-2.363v-7.65c0-1.687.72-2.362 2.509-2.362h4.545c1.788 0 2.508.675 2.508 2.363ZM11.813 4.612v2.026c0 1.687-.72 2.362-2.51 2.362H4.76C2.97 9 2.25 8.325 2.25 6.638V4.612c0-1.687.72-2.362 2.509-2.362h4.545c1.788 0 2.508.675 2.508 2.362Z"/>
+  </symbol>
+  
+  <symbol id="close-icon" viewBox="0 0 24 24">
+    <path stroke="#10152E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m22 22-8.2-8.2M17.83 13H13v4.83"/>
+    <path stroke="#10152E" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 11V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7h2"/>
+  </symbol>
+  
+  <symbol id="close-icon-active" viewBox="0 0 24 24">
+    <path stroke="#FFA02C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m22 22-8.2-8.2M17.83 13H13v4.83"/>
+    <path stroke="#FFA02C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 11V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7h2"/>
+  </symbol>
+</svg> 
+
