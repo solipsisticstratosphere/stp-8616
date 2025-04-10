@@ -5,6 +5,11 @@
 @import './common/mixins';
 @import './header.scss';
 @import './vite-promo.scss';
+@import './fan-art.scss';
+@import './footer.scss';
+@import './quests.scss';
+@import './storm.scss';
+@import './leaderboard.scss';
 
 body {
   font-family: var(--font-family);
