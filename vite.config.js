@@ -10,8 +10,8 @@ const githubPagesPathFix = () => {
     name: 'github-pages-path-fix',
     transformIndexHtml(html) {
       return html
-        .replace(/(href|src)=["']\/stp-8616\//g, '$1="./') // Fix CSS and JS
-        .replace(/src=["']\/stp-8616\/assets\//g, 'src="./assets/'); // Fix image paths
+        .replace(/(href|src)=["']\/stp-8616\//g, '$1="./')
+        .replace(/src=["']\/stp-8616\/assets\//g, 'src="./assets/');
     },
   };
 };
