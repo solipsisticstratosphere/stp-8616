@@ -28,6 +28,31 @@ const initSwiper = () => {
 
   duplicateSlides();
 
+  const setupCustomNavigation = () => {
+    const prevButtons = document.querySelectorAll(
+      '.character-card__nav-btn--prev'
+    );
+    const nextButtons = document.querySelectorAll(
+      '.character-card__nav-btn--next'
+    );
+
+    prevButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        if (characterSwiper) {
+          characterSwiper.slidePrev();
+        }
+      });
+    });
+
+    nextButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        if (characterSwiper) {
+          characterSwiper.slideNext();
+        }
+      });
+    });
+  };
+
   const characterSwiper = new Swiper('.character-swiper', {
     modules: [Navigation, Pagination, Autoplay, EffectCoverflow],
     effect: 'coverflow',
@@ -63,34 +88,42 @@ const initSwiper = () => {
           : '';
       },
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+
     breakpoints: {
-      320: {
+      0: {
         slidesPerView: 1,
         coverflowEffect: {
           depth: 0,
         },
+        spaceBetween: 15,
+      },
+      321: {
+        slidesPerView: 1,
+        coverflowEffect: {
+          depth: 0,
+        },
+        spaceBetween: 65,
       },
       768: {
-        slidesPerView: 'auto',
+        slidesPerView: 3,
         coverflowEffect: {
           depth: 50,
         },
+        spaceBetween: 65,
       },
       1200: {
         slidesPerView: 'auto',
         coverflowEffect: {
           depth: 100,
         },
+        spaceBetween: 65,
       },
       1800: {
         slidesPerView: 'auto',
         coverflowEffect: {
           depth: 150,
         },
+        spaceBetween: 65,
       },
     },
     on: {
@@ -113,6 +146,8 @@ const initSwiper = () => {
             slide.style.opacity = '0.7';
           }
         });
+
+        setupCustomNavigation();
       },
       slideChangeTransitionStart: function () {
         this.slides.forEach((slide, index) => {

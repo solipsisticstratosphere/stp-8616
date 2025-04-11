@@ -109,14 +109,6 @@ h1 {
   }
 }
 
-h2 {
-  @include font(28, 36);
-
-  @include media(desktop) {
-    @include font(36, 48);
-  }
-}
-
 .hero-section {
   text-align: left;
   background-color: var(--background);
