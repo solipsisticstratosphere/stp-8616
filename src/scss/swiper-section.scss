@@ -41,6 +41,8 @@
   transition: all 0.3s ease;
   opacity: 1 !important;
   width: 540px !important;
+  border-radius: 40px;
+  overflow: hidden;
 }
 
 .clone-slide {
@@ -53,7 +55,7 @@
 
 .character-card {
   position: relative;
-  border-radius: 20px;
+  border-radius: 40px !important;
   overflow: hidden;
   height: 618px;
   width: 540px;
@@ -158,10 +160,27 @@
 
 .swiper-slide-active {
   z-index: 10;
+  border-radius: 40px !important;
+  overflow: hidden;
+
+  .character-card {
+    transform: scale(1);
+    border-radius: 40px !important;
+    overflow: hidden;
+  }
 }
 
 .swiper-slide {
   transition: all 0.5s ease;
+  border-radius: 40px !important;
+  overflow: hidden;
+
+  .character-card {
+    will-change: transform;
+    transform-origin: center;
+    border-radius: 40px !important;
+    overflow: hidden;
+  }
 }
 
 .swiper-navigation {

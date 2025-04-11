@@ -65,6 +65,8 @@ const initSwiper = () => {
       depth: 100,
       modifier: 1,
       slideShadows: false,
+      scale: 0.85,
+      borderRadius: 40,
     },
     spaceBetween: 65,
     initialSlide: 1,
@@ -142,8 +144,17 @@ const initSwiper = () => {
       init: function () {
         this.slides.forEach((slide, index) => {
           if (!slide.classList.contains('swiper-slide-active')) {
-            slide.style.transform = 'scale(0.85)';
-            slide.style.opacity = '0.7';
+            const card = slide.querySelector('.character-card');
+            if (card) {
+              card.style.transform = 'scale(0.85)';
+              card.style.opacity = '0.7';
+              card.style.borderRadius = '40px';
+            }
+          } else {
+            const card = slide.querySelector('.character-card');
+            if (card) {
+              card.style.borderRadius = '40px';
+            }
           }
         });
 
@@ -151,12 +162,17 @@ const initSwiper = () => {
       },
       slideChangeTransitionStart: function () {
         this.slides.forEach((slide, index) => {
+          const card = slide.querySelector('.character-card');
+          if (!card) return;
+
           if (slide.classList.contains('swiper-slide-active')) {
-            slide.style.transform = 'scale(1)';
-            slide.style.opacity = '1';
+            card.style.transform = 'scale(1)';
+            card.style.opacity = '1';
+            card.style.borderRadius = '40px';
           } else {
-            slide.style.transform = 'scale(0.85)';
-            slide.style.opacity = '0.7';
+            card.style.transform = 'scale(0.85)';
+            card.style.opacity = '0.7';
+            card.style.borderRadius = '40px';
           }
         });
       },

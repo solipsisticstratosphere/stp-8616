@@ -4,4 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const initSwiper = module.default;
     initSwiper();
   });
+  import('./js/cookiePopup.js').then(module => {
+    const createCookiePopup = module.default;
+    createCookiePopup();
+  });
 });
