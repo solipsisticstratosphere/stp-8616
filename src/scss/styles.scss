@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700&family=Anta&family=Braah+One&family=Cabin:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/effect-coverflow';
+
 @import './common/vars';
 @import './common/reset';
 @import './common/mixins';
 @import './header.scss';
 @import './vite-promo.scss';
 @import './welcome.scss';
+@import './swiper-section.scss';
 
 @import './fan-art.scss';
 @import './footer.scss';
