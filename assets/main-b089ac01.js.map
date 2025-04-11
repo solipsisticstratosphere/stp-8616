@@ -1,1 +1,0 @@
-{"version":3,"mappings":"2iDAAA,SAAS,iBAAiB,mBAAoB,IAAM,CAClDA,EAAA,WAAO,0BAAoB,KAC7B,CAAC","names":["__vitePreload"],"sources":["../../src/main.js"],"sourcesContent":["document.addEventListener('DOMContentLoaded', () => {\n  import('./js/burgerMenu.js');\n});\n"],"file":"assets/main-b089ac01.js"}
