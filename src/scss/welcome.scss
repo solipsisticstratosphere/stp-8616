@@ -110,7 +110,7 @@
   }
 }
 
-h2 {
+.welcome-title {
   font-family: var(--second-family);
   font-weight: 400;
   text-align: center;
@@ -118,12 +118,12 @@ h2 {
   margin-bottom: 30px;
   position: relative;
   z-index: 2;
-  font-size: 20px !important;
+  font-size: 20px;
   line-height: 42px;
 }
 
 @media (min-width: 768px) {
-  h2 {
+  .welcome-title {
     margin-bottom: 40px;
     font-size: 32px;
     line-height: 48px;
@@ -131,7 +131,7 @@ h2 {
 }
 
 @media (min-width: 1024px) {
-  h2 {
+  .welcome-title {
     margin-bottom: 64px;
     font-size: 40px;
     line-height: 62px;
