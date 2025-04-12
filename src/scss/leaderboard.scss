@@ -1,3 +1,17 @@
 .container-second {
   text-align: center;
 }
+.leaderboard-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #29304d;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
