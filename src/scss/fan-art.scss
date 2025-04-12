@@ -1,56 +1,146 @@
 .fan-art-steps {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 30px;
+  gap: 16px;
+  margin-top: 0px;
+  width: 288px;
 }
 
-.steps {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  background-color: #262a57;
-  padding: 50px;
-}
+// .steps-fan {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: 40px;
+//   background-color: #262a57;
+//   padding: 0px;
+// }
 
-.step {
+.step-fan {
   display: flex;
   text-align: left;
-  width: 446px;
-  height: 68px;
-
+  width: 136px;
+  height: 80px;
   background: #262a57;
   color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  padding: 0;
-  border-radius: 10px;
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53846;
+  color: #eaeaea;
+
   align-items: center;
 }
 
 .number {
-  font-family: 'Braah One', sans-serif;
-  font-weight: 400;
-  font-size: 96px;
-  line-height: 0.64583;
-  color: #28345d;
-  flex-shrink: 0;
+  display: none;
+}
+
+.p-fan {
+  margin-bottom: 16px;
 }
 .ppp {
   margin: 0;
   line-height: 1.4;
   word-break: break-word;
+  text-align: left;
 }
 
-.step-gap-first {
-  gap: 56px;
+.fan-item {
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53846;
+  text-align: left;
+  color: #eaeaea;
 }
-.step-gap-second {
-  gap: 40px;
+.fan-art {
+  margin-bottom: 14px;
+  width: 288px;
 }
-.step-gap-third {
-  gap: 40px;
+.blue-brick-storm {
+  display: block;
+  position: relative;
+  width: 26px;
+  height: 58px;
+  margin-left: 202px;
 }
-.step-gap-forth {
-  gap: 40px;
+@media only screen and (min-width: 1200px) {
+  .fan-art-steps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 118px;
+    margin-top: 0px;
+    width: 1010px;
+  }
+
+  .steps-fan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: #262a57;
+    padding: 0px;
+  }
+
+  .step-fan {
+    display: flex;
+    text-align: left;
+    width: 446px;
+    height: 68px;
+    background: #262a57;
+    color: white;
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.88889;
+    color: #eaeaea;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  .number {
+    display: block;
+    font-family: 'Braah One', sans-serif;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 0.64583;
+    color: #28345d;
+    flex-shrink: 0;
+  }
+
+  .p-fan {
+    margin-bottom: 24px;
+  }
+  .ppp {
+    margin: 0;
+    line-height: 1.4;
+    word-break: break-word;
+    text-align: left;
+  }
+
+  .step-gap-first {
+    gap: 56px;
+  }
+  .step-gap-second {
+    gap: 40px;
+  }
+  .step-gap-third {
+    gap: 40px;
+  }
+  .step-gap-forth {
+    gap: 40px;
+  }
+  .fan-item {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.88889;
+    text-align: left;
+    color: #eaeaea;
+  }
+  .fan-art {
+    margin-bottom: 96px;
+    width: 1104px;
+  }
+  .blue-brick-storm {
+    display: none;
+  }
 }

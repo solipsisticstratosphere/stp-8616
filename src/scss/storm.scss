@@ -1,13 +1,85 @@
 .container-second {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
+  min-width: 320px;
+  margin: 0 auto;
+
+  padding: 0 16px;
 }
 
-.storm-icon,
-.quests-icon {
-  margin-top: 20px;
-  width: 60px;
+.storm {
+  position: relative;
+  width: 288px;
+  margin-bottom: 16px;
+}
+.storm-title {
+  margin-bottom: 8px;
+  font-family: 'Braah One', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #ffa02c;
+}
+.storm-item {
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53846;
+  text-align: left;
+  color: #eaeaea;
+}
+.p-storm-first {
+  margin-bottom: 16px;
+}
+.storm-image-yellow {
+  display: none;
+}
+.storm-image-green {
+  position: relative;
+  width: 26px;
+  height: 48px;
+  margin-left: 21px;
+  margin-top: 8px;
+}
+@media only screen and (min-width: 1200px) {
+  .container-second {
+    width: 1200px;
+  }
+  .storm {
+    position: relative;
+    width: 1104px;
+    margin-bottom: 96px;
+  }
+  .storm-image-yellow {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 126px;
+    top: 186px;
+    right: 90px;
+  }
+  .storm-image-green {
+    display: none;
+  }
+  .storm-title {
+    margin-bottom: 24px;
+    font-family: 'Braah One', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.55;
+    text-align: center;
+    color: #ffa02c;
+  }
+  .storm-item {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.88889;
+    text-align: center;
+    color: #eaeaea;
+  }
+  .p-storm-first {
+    margin-bottom: 24px;
+  }
 }
