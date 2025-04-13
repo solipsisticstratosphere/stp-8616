@@ -1,15 +1,68 @@
 .quests {
   margin-bottom: 96px;
   position: relative;
+  width: 288px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.quests-title {
+  margin-bottom: 24px;
+  font-family: 'Braah One', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  color: #ffa02c;
 }
 .p-quests-first {
   margin-bottom: 16px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-.green-brick-storm {
-  position: absolute;
-  width: 80px;
-  height: 143px;
-  top: 136px;
-  left: 42px;
+.quests-item {
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53846;
+  text-align: center;
+  color: #eaeaea;
+}
+.green-brick-quests {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .green-brick-quests {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 143px;
+    top: 136px;
+    left: 42px;
+  }
+  .quests {
+    margin-bottom: 96px;
+  }
+  .p-quests-first {
+    margin-bottom: 16px;
+  }
+  .quests-item {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.88889;
+    text-align: center;
+    color: #eaeaea;
+  }
+  .quests-title {
+    margin-bottom: 24px;
+    font-family: 'Braah One', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.55;
+    text-align: center;
+    color: #ffa02c;
+  }
 }
