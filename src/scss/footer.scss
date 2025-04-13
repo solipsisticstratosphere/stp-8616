@@ -1,26 +1,27 @@
 .footer-second {
-  margin-top: 96px;
+  margin-top: 48px;
   border-top: 1px solid #333;
-  padding: 48px 0;
+  padding: 24px 0;
   background: #10152e;
   width: 100%;
 }
 
 .footer-container {
-  width: 1104px;
+  width: 320px;
   margin: 0 auto;
   text-align: center;
 }
 
 .footer-links {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 72px;
-  margin-bottom: 32px;
+  gap: 24px;
+  margin-bottom: 13px;
   font-family: 'Alexandria', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.66667;
   color: #eaeaea;
 }
 
@@ -35,8 +36,54 @@
 
 .copyright {
   font-family: 'Alexandria', sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.7;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 1.66667;
   color: #eaeaea;
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-second {
+    margin-top: 96px;
+    border-top: 1px solid #333;
+    padding: 48px 0;
+    background: #10152e;
+    width: 100%;
+  }
+
+  .footer-container {
+    width: 1104px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 72px;
+    margin-bottom: 32px;
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #eaeaea;
+  }
+
+  .footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+
+  .copyright {
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #eaeaea;
+  }
 }

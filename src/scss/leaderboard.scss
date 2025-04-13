@@ -4,36 +4,53 @@
 .leaderboard-cards {
   display: flex;
   justify-content: center;
-  gap: 24px;
-
+  gap: 16px;
   flex-wrap: wrap;
-  width: 1104px;
-  height: 176px;
+  width: 288px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
   border-radius: 10px;
-  padding-top: 54px;
-  padding-bottom: 54px;
-  padding-left: 57px;
-  padding-right: 57px;
-  width: 351px;
-  height: 176px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 288px;
+  height: 88px;
   background: rgba(40, 52, 93, 0.85);
+  display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 .leaderboard {
-  margin-top: 96px;
-  margin-bottom: 96px;
+  margin-top: 14px;
+  margin-bottom: 33px;
 }
 .p-leader {
-  width: 238px;
-  height: 68px;
+  width: 100%;
+  height: auto;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.yellow-brick-storm-mob {
+  display: block;
+
+  width: 31px;
+  height: 50px;
+  margin-left: 21px;
+  margin-top: 8px;
+}
+.leaderboard-wrapper {
+  width: 288px;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 1200px) {
   .container-second {
@@ -72,5 +89,8 @@
     height: 68px;
     align-items: center;
     justify-content: center;
+  }
+  .yellow-brick-storm-mob {
+    display: none;
   }
 }
