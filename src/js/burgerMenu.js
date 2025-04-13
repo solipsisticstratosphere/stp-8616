@@ -38,8 +38,6 @@
     } else {
       burgerIcon.setAttribute('href', './img/sprite.svg#burger-menu-active');
     }
-
-    body.style.overflow = isMenuOpen ? '' : 'hidden';
   };
 
   menuBtn.addEventListener('click', toggleMenu);
@@ -56,7 +54,6 @@
       mobileMenu.classList.remove('is-open');
       mobileMenu.setAttribute('aria-hidden', true);
       burgerIcon.setAttribute('href', './img/sprite.svg#burger-menu');
-      body.style.overflow = '';
     });
   });
 
@@ -66,7 +63,6 @@
       mobileMenu.classList.remove('is-open');
       mobileMenu.setAttribute('aria-hidden', true);
       burgerIcon.setAttribute('href', './img/sprite.svg#burger-menu');
-      body.style.overflow = '';
     }
   });
 })();
