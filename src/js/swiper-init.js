@@ -304,9 +304,10 @@ const initMobileCarousel = () => {
 
     const nextBtn = document.createElement('button');
     nextBtn.className = 'character-card__nav-btn character-card__nav-btn--next';
-    nextBtn.innerHTML =
-      '<img src="./img/arrow-left.png" alt="Next" class="character-card__nav-icon character-card__nav-icon--next">';
-
+    nextBtn.innerHTML = `
+  <svg class="character-card__nav-icon character-card__nav-icon--next" width="24" height="24">
+    <use href="./img/sprite.svg#arrow-right"></use>
+  </svg>`;
     nav.appendChild(prevBtn);
     nav.appendChild(nextBtn);
     carousel.appendChild(nav);
