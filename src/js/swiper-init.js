@@ -299,58 +299,13 @@ const initMobileCarousel = () => {
 
     const prevBtn = document.createElement('button');
     prevBtn.className = 'character-card__nav-btn character-card__nav-btn--prev';
-    prevBtn.setAttribute('aria-label', 'Previous slide');
-
-    const prevImg = document.createElement('img');
-    prevImg.className =
-      'character-card__nav-icon character-card__nav-icon--prev';
-    prevImg.src = './img/arrow-left.png';
-    prevImg.alt = 'Previous';
-    prevBtn.appendChild(prevImg);
+    prevBtn.innerHTML =
+      '<img src="./img/arrow-left.png" alt="Previous" class="character-card__nav-icon character-card__nav-icon--prev">';
 
     const nextBtn = document.createElement('button');
     nextBtn.className = 'character-card__nav-btn character-card__nav-btn--next';
-    nextBtn.setAttribute('aria-label', 'Next slide');
-
-    const nextImg = document.createElement('img');
-    nextImg.className =
-      'character-card__nav-icon character-card__nav-icon--next';
-    nextImg.src = './img/arrow-left.png';
-    nextImg.alt = 'Next';
-
-    nextBtn.appendChild(nextImg);
-
-    prevBtn.addEventListener('mouseenter', () => {
-      prevImg.src = './img/arrow-left.png';
-    });
-
-    prevBtn.addEventListener('mouseleave', () => {
-      prevImg.src = './img/arrow-left.png';
-    });
-
-    prevBtn.addEventListener('focus', () => {
-      prevImg.src = './img/arrow-left.png';
-    });
-
-    prevBtn.addEventListener('blur', () => {
-      prevImg.src = './img/arrow-left.png';
-    });
-
-    nextBtn.addEventListener('mouseenter', () => {
-      nextImg.src = './img/arrow-left.png';
-    });
-
-    nextBtn.addEventListener('mouseleave', () => {
-      nextImg.src = './img/arrow-left.png';
-    });
-
-    nextBtn.addEventListener('focus', () => {
-      nextImg.src = './img/arrow-left.png';
-    });
-
-    nextBtn.addEventListener('blur', () => {
-      nextImg.src = './img/arrow-left.png';
-    });
+    nextBtn.innerHTML =
+      '<img src="./img/arrow-left.png" alt="Next" class="character-card__nav-icon character-card__nav-icon--next">';
 
     nav.appendChild(prevBtn);
     nav.appendChild(nextBtn);
