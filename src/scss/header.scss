@@ -33,6 +33,7 @@
   .logo {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   .logo img {
@@ -42,15 +43,24 @@
   }
 
   .logo::after {
-    content: 'Storm PuzzleRush Game';
+    content: 'Storm Puzzle Rush Game';
     display: block;
-    font-family: var(--second-family);
     font-family: 'Braah One', sans-serif;
     font-weight: 400;
     font-size: 10px;
     line-height: 20px;
-    color: var(--yellow);
     margin-left: 8px;
+  }
+
+  .logo::after {
+    position: relative;
+  }
+
+  .logo::after {
+    background: linear-gradient(to right, var(--yellow) 53%, var(--white) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 }
 
