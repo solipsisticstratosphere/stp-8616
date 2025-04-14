@@ -29,6 +29,43 @@
   height: 60px;
 }
 
+@media (max-width: 820px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo img {
+    content: url('../img/logo-s.png');
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo::after {
+    content: 'Storm Puzzle Rush Game';
+    display: block;
+    font-family: 'Braah One', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 8px;
+    position: relative;
+    background: linear-gradient(to right, var(--yellow) 53%, var(--white) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .mobile-menu-btn {
+    display: flex !important;
+  }
+
+  .nav-list {
+    display: none !important;
+  }
+}
+
 @media (max-width: 320px) {
   .logo {
     display: flex;
