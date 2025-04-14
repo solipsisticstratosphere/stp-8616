@@ -299,14 +299,15 @@ const initMobileCarousel = () => {
 
     const prevBtn = document.createElement('button');
     prevBtn.className = 'character-card__nav-btn character-card__nav-btn--prev';
-    prevBtn.innerHTML =
-      '<img src="./img/arrow-left.png" alt="Previous" class="character-card__nav-icon character-card__nav-icon--prev">';
-
+    prevBtn.innerHTML = `
+  <svg class="character-card__nav-icon " width="24" height="24" viewBox="0 0 52 62">
+    <path stroke="#262A57" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M32.5 51.46 18.373 34.617c-1.668-1.99-1.668-5.244 0-7.234L32.5 10.54" fill="none"/>
+  </svg>`;
     const nextBtn = document.createElement('button');
     nextBtn.className = 'character-card__nav-btn character-card__nav-btn--next';
     nextBtn.innerHTML = `
-  <svg class="character-card__nav-icon character-card__nav-icon--next" width="24" height="24">
-    <use href="./img/sprite.svg#arrow-right"></use>
+  <svg class="character-card__nav-icon character-card__nav-icon--next" width="24" height="24" viewBox="0 0 52 62">
+    <path stroke="#262A57" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m19.5 51.46 14.127-16.843c1.668-1.99 1.668-5.244 0-7.234L19.5 10.54" fill="none"/>
   </svg>`;
     nav.appendChild(prevBtn);
     nav.appendChild(nextBtn);
