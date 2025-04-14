@@ -20,8 +20,11 @@
 @import './storm.scss';
 @import './leaderboard.scss';
 @import './game-promo.scss';
+
 @import './privacy-policy.scss';
-@import './cookies-policy.scss';
+
+@import './terms-and-conditions-main.scss';
+
 
 body {
   font-family: var(--font-family);
@@ -46,7 +49,7 @@ body {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 0px;
   position: relative;
   z-index: 1;
 }
