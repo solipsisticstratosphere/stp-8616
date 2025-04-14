@@ -1,14 +1,16 @@
 .container-terms {
   width: 288px;
   margin: 0 auto;
-  padding: 0;
 }
 .terms {
   padding: 0px;
 }
-
+.page-terms {
+  padding-top: 32px;
+}
 .terms-section {
-  padding: 0px;
+  padding-top: 32px;
+  padding-bottom: 0px;
 }
 .terms-title-first {
   font-family: 'Braah One', sans-serif;
@@ -103,11 +105,19 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .page-terms {
+    padding-top: 96px;
+  }
   .container-terms {
     width: 1104px;
     margin: 0 auto;
     padding: 0;
   }
+  .terms-section {
+    padding-top: 96px;
+    padding-bottom: 0px;
+  }
+
   .terms-title-first {
     font-family: 'Braah One', sans-serif;
     font-weight: 400;
