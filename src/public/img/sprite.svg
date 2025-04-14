@@ -31,5 +31,18 @@
     <path stroke="#FFA02C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m22 22-8.2-8.2M17.83 13H13v4.83"/>
     <path stroke="#FFA02C" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 11V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7h2"/>
   </symbol>
+
+  <symbol id="arrow-right" viewBox="0 0 52 62">
+    <path stroke="#262A57" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m19.5 51.46 14.127-16.843c1.668-1.99 1.668-5.244 0-7.234L19.5 10.54"/>
+</symbol>
+
+<symbol id="arrow-left" viewBox="0 0 52 62">
+  <path stroke="#262A57" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="M32.5 51.46 18.373 34.617c-1.668-1.99-1.668-5.244 0-7.234L32.5 10.54"/>
+</symbol>
+
+<symbol id="home-icon" viewBox="0 0 32 32">
+  <path stroke="#EAEAEA" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" d="m20 26.56-8.693-8.693a2.648 2.648 0 0 1 0-3.734L20 5.44"/>
+</symbol>
+
 </svg> 
 
